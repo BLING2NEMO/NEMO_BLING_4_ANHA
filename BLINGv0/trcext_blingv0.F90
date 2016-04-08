@@ -83,7 +83,7 @@ CONTAINS
       IF ( (nyear .GT. 1958) .AND. (nyear .LT. 2016) ) THEN
         pco2_atm=pco2(nyear-1958)
       ELSE
-        pco2_atm=pco2_cte  
+        pco2_atm=pco2(1)  
       ENDIF
 
       xconv  = 0.01_wp / 3600._wp ! convert from cm/h to m/s (piston velocity)
